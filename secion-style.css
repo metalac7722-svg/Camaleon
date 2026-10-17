@@ -1,0 +1,470 @@
+/* =========================================
+   VARIABLES Y RESET
+   ========================================= */
+:root {
+    --bg-color: #FCF8F2; /* Fondo crema */
+    --text-dark: #222222;
+    --text-light: #777777;
+    --primary-green: #0F6B52;
+    --primary-orange: #D96530;
+    --border-input: #E8C7B7; /* Color durazno del borde del input */
+    --font-main: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   FORMAS DECORATIVAS DE FONDO
+   ========================================= */
+.bg-decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.deco-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45vw;
+    height: 50vh;
+    opacity: 0.9;
+}
+
+.deco-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30vw;
+    height: 30vh;
+}
+
+.deco-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30vw;
+    height: 35vh;
+}
+
+.deco-branch-right {
+    position: absolute;
+    bottom: 10vh;
+    right: 5vw;
+    width: 150px;
+    height: 150px;
+    opacity: 0.8;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* --- LOGO AMPLIADO --- */
+.logo-img {
+    width: 90px; /* <--- Tamaño aumentado considerablemente. Cámbialo si lo quieres aún más grande */
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 55px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-green);
+}
+
+.btn-outline {
+    border: 1px solid var(--primary-green);
+    color: var(--primary-green);
+    padding: 8px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+/* =========================================
+   CONTENIDO PRINCIPAL (MAIN)
+   ========================================= */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 80px;
+    gap: 100px;
+    position: relative;
+    z-index: 5;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* -----------------------------------------
+   LADO IZQUIERDO
+   ----------------------------------------- */
+.hero-section {
+    flex: 1;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.chameleon-container {
+    width: 100%;
+    max-width: 380px; 
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.chameleon-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    mix-blend-mode: multiply; 
+}
+
+.hero-text-content {
+    width: 100%;
+}
+
+.hero-subtitle {
+    color: var(--primary-orange);
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.hero-title {
+    font-size: 46px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #111;
+}
+
+.hero-title span {
+    color: var(--primary-green);
+}
+
+.hero-description {
+    color: #333;
+    font-size: 21px;
+    line-height: 1.45;
+    font-weight: 400;
+}
+
+/* -----------------------------------------
+   LADO DERECHO (FORMULARIO)
+   ----------------------------------------- */
+.form-section {
+    flex: 1;
+    max-width: 460px;
+    background-color: white;
+    padding: 45px 50px;
+    border-radius: 35px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+}
+
+.form-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.form-section h2 span {
+    color: var(--primary-green);
+}
+
+.form-subtitle {
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    max-width: 90%;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.input-group i.fa-envelope,
+.input-group i.fa-lock {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-green);
+    font-size: 16px;
+}
+
+.input-group .toggle-password {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--primary-green);
+    font-size: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px 14px 48px;
+    border: 1px solid var(--border-input);
+    border-radius: 8px;
+    font-family: var(--font-main);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: #fff;
+    color: #333;
+}
+
+.input-group input::placeholder {
+    color: #999;
+}
+
+.input-group input:focus {
+    border-color: var(--primary-orange);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    color: #555;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 6px;
+    accent-color: var(--primary-green);
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--border-input);
+    border-radius: 3px;
+}
+
+.forgot-link {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: var(--primary-green);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #0b523f;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 22px 0;
+    color: #999;
+    font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #E0E0E0;
+}
+.divider::before { margin-right: 15px; }
+.divider::after { margin-left: 15px; }
+
+.social-btn {
+    width: 100%;
+    background-color: white;
+    border: 1px solid var(--border-input);
+    padding: 12px;
+    border-radius: 8px;
+    font-family: var(--font-main);
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #fafafa;
+}
+
+.social-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.register-link {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+footer {
+    background-color: #248F6F;
+    color: white;
+    padding: 12px 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    margin-left: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   RESPONSIVE (Para pantallas más pequeñas)
+   ========================================= */
+@media (max-width: 1200px) {
+    main {
+        gap: 40px;
+        padding: 20px 40px;
+    }
+    .deco-top-left { width: 60vw; }
+}
+
+@media (max-width: 992px) {
+    header { padding: 20px 30px; }
+    nav { display: none; }
+    main {
+        flex-direction: column;
+        padding: 20px;
+        gap: 50px;
+    }
+    .hero-section {
+        align-items: center;
+        text-align: center;
+    }
+    .chameleon-container {
+        margin: 0 0 20px 0;
+    }
+    .hero-description { font-size: 18px; }
+    .form-section {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    /* Ajuste del logo en pantallas de móvil */
+    .logo-img {
+        width: 70px; 
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 15px;
+    }
+    footer a { margin: 0 5px; }
+}
+
+/* =========================================
+  PERDON SE QUE ES MUCHO TEXTO JAJAJAJA
+   ========================================= */
