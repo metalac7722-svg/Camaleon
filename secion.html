@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameleon - Iniciar Sesión</title>
+    
+    <!-- Enlace al archivo CSS separado -->
+    <link rel="stylesheet" href="secion-style.css">
+    
+    <!-- Fuentes de Google (Outfit) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         FORMAS DECORATIVAS DE FONDO
+         ========================================== -->
+    <div class="bg-decorations">
+        <svg class="deco-top-left" viewBox="0 0 500 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#8A9A7B" d="M0,0 L500,0 C450,80 480,200 400,300 C300,400 150,450 0,380 Z"/>
+        </svg>
+        <svg class="deco-bottom-left" viewBox="0 0 400 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#D36D36" d="M0,300 L300,300 C350,250 380,150 300,100 C200,50 100,120 0,200 Z"/>
+        </svg>
+        <svg class="deco-bottom-right" viewBox="0 0 400 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#D36D36" d="M400,300 L100,300 C50,250 20,150 100,100 C200,50 300,120 400,200 Z"/>
+        </svg>
+        <svg class="deco-branch-right" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 20 130 Q 50 80 100 30" fill="none" stroke="#4A5D3E" stroke-width="3"/>
+            <path fill="#6B7F5E" d="M 80 50 Q 95 45 100 60 Q 85 65 80 50 Z"/>
+            <path fill="#6B7F5E" d="M 60 80 Q 70 70 80 85 Q 65 90 60 80 Z"/>
+            <path fill="#6B7F5E" d="M 40 110 Q 45 95 60 105 Q 50 115 40 110 Z"/>
+        </svg>
+    </div>
+
+    <!-- ==========================================
+         CABECERA (HEADER)
+         ========================================== -->
+    <header>
+        <a href="#" class="logo">
+            <!-- Únicamente el logo desde tu carpeta images -->
+            <img src="images/camaleon logo-tmp.png" alt="Logo Cameleon" class="logo-img">
+        </a>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Cursos</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <a href="#" class="btn-outline">Iniciar sesión</a>
+    </header>
+
+    <!-- ==========================================
+         CONTENIDO PRINCIPAL
+         ========================================== -->
+    <main>
+        <!-- LADO IZQUIERDO: Ilustración y Textos -->
+        <section class="hero-section">
+            
+            <div class="chameleon-container">
+                <img src="images/Camaleon-plant.png" alt="Ilustración de camaleón" class="chameleon-img">
+            </div>
+
+            <div class="hero-text-content">
+                <p class="hero-subtitle">BIENVENIDO DE NUEVO</p>
+                <h1 class="hero-title">La teoría del color<br><span>te espera</span></h1>
+                <p class="hero-description">
+                    Ingresa a tu cuenta y continúa explorando el mundo del color, tus cursos y recursos personalizados.
+                </p>
+            </div>
+        </section>
+
+        <!-- LADO DERECHO: Formulario -->
+        <section class="form-section">
+            <h2>Iniciar <span>sesión</span></h2>
+            <p class="form-subtitle">Bienvenido de nuevo, ingresa con tus datos para acceder a tu cuenta.</p>
+
+            <form action="#">
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Correo electronico" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Contraseña" id="password" required>
+                    <i class="fa-regular fa-eye toggle-password" onclick="togglePassword()"></i>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox"> Recordarme
+                    </label>
+                    <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i> Iniciar sesion
+                </button>
+
+                <div class="divider">o</div>
+
+                <button type="button" class="social-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                    Continuar con Google
+                </button>
+
+                <button type="button" class="social-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796v8.437C19.612 23.094 24 18.1 24 12.073z"/>
+                    </svg>
+                    Continuar con Facebook
+                </button>
+
+                <p class="register-link">
+                    ¿No tienes una cuenta? <a href="#">Registrate aquí →</a>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         PIE DE PÁGINA (FOOTER)
+         ========================================== -->
+    <footer>
+        <div>
+            © 2026 Cameleon. Todos los derechos reservados.
+        </div>
+        <div>
+            <a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a>
+        </div>
+    </footer>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const icon = document.querySelector('.toggle-password');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        }
+    </script>
+</body>
+</html>
+
+    <!-- ==========================================
+       Hola Luis, emmm saludos desde el otro lado de la pantalla jajaja, este me costo un poquito mas que el resto
+       espero aver ayudado en algo :D
+         ========================================== -->
