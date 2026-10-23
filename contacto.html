@@ -14,11 +14,11 @@
   <div class="container header-content">
     <a href="home.html" class="logo">
       <img src="images/camaleon logo-tmp.png" alt="Camaleon" class="logo-img">
-      <span class="logo-text">amaleon</span>
+      <!-- Texto "amaleon" eliminado -->
     </a>
     <nav class="nav-menu">
       <a href="home.html">Inicio</a>
-      <a href="#">Sobre nosotros</a>
+      <a href="sobre.html">Sobre nosotros</a>
       <a href="cursos.html">Cursos</a>
       <a href="blog.html">Blog</a>
       <a href="contacto.html" class="active">Contacto</a>
@@ -61,133 +61,142 @@
 </section>
 
 <!-- ============ SECCIÓN PRINCIPAL ============ -->
-<section class="main container">
-  <!-- Columna izquierda: info -->
-  <div class="info-col">
+<!-- MODIFICADO: Se quitó la clase container de la section y se agregó un div interno -->
+<section class="main">
+  <div class="container main-content">
+    <!-- Columna izquierda: info -->
+    <div class="info-col">
 
-    <div class="info-card">
-      <div class="info-icon icon-green">📍</div>
-      <div>
-        <h3>Ubicación</h3>
-        <p>Estelí, Nicaragua<br>Estamos para atenderte en nuestra ubicación o de forma virtual.</p>
+      <div class="info-card">
+        <div class="info-icon icon-green">📍</div>
+        <div>
+          <h3>Ubicación</h3>
+          <p>Estelí, Nicaragua<br>Estamos para atenderte en nuestra ubicación o de forma virtual.</p>
+        </div>
       </div>
+
+      <div class="info-card">
+        <div class="info-icon icon-orange">✉</div>
+        <div>
+          <h3>Correo electrónico</h3>
+          <p>hola@camaleon.com<br>Escríbenos y te responderemos lo más pronto posible.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon icon-beige">📞</div>
+        <div>
+          <h3>Teléfono / WhatsApp</h3>
+          <p>+505 8888 8888<br>Lunes a viernes - 8:00 a.m. - 5:00 p.m.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon icon-green">💬</div>
+        <div>
+          <h3>Síguenos en redes</h3>
+          <p>Conéctate con nosotros y mantente al día con nuestras novedades.</p>
+        </div>
+      </div>
+
     </div>
 
-    <div class="info-card">
-      <div class="info-icon icon-orange">✉</div>
-      <div>
-        <h3>Correo electrónico</h3>
-        <p>hola@camaleon.com<br>Escríbenos y te responderemos lo más pronto posible.</p>
-      </div>
-    </div>
+    <!-- Columna derecha: formulario -->
+    <div class="form-col">
+      <div class="form-inner">
+        <span class="form-subtitle">ESCRÍBENOS</span>
+        <p class="form-note">Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+        <h2>Estamos aquí <br><b>para ayudarte</b></h2>
 
-    <div class="info-card">
-      <div class="info-icon icon-beige">📞</div>
-      <div>
-        <h3>Teléfono / WhatsApp</h3>
-        <p>+505 8888 8888<br>Lunes a viernes - 8:00 a.m. - 5:00 p.m.</p>
-      </div>
-    </div>
-
-    <div class="info-card">
-      <div class="info-icon icon-green">💬</div>
-      <div>
-        <h3>Síguenos en redes</h3>
-        <p>Conéctate con nosotros y mantente al día con nuestras novedades.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Columna derecha: formulario -->
-  <div class="form-col">
-    <div class="form-inner">
-      <span class="form-subtitle">ESCRÍBENOS</span>
-      <p class="form-note">Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
-      <h2>Estamos aquí <br><b>para ayudarte</b></h2>
-
-      <form class="contact-form">
-        <div class="form-row">
-          <div class="input-group">
-            <span class="input-icon">👤</span>
-            <input type="text" placeholder="Nombre completo *" required>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="input-group">
+              <span class="input-icon">👤</span>
+              <input type="text" placeholder="Nombre completo *" required>
+            </div>
+            <div class="input-group">
+              <span class="input-icon">✉</span>
+              <input type="email" placeholder="Correo electrónico *" required>
+            </div>
           </div>
-          <div class="input-group">
-            <span class="input-icon">✉</span>
-            <input type="email" placeholder="Correo electrónico *" required>
+
+          <div class="input-group full">
+            <span class="input-icon">✎</span>
+            <input type="text" placeholder="Asunto *" required>
           </div>
-        </div>
 
-        <div class="input-group full">
-          <span class="input-icon">✎</span>
-          <input type="text" placeholder="Asunto *" required>
-        </div>
+          <div class="input-group full textarea-group">
+            <span class="input-icon">✎</span>
+            <textarea placeholder="Tu mensaje *" required></textarea>
+          </div>
 
-        <div class="input-group full textarea-group">
-          <span class="input-icon">✎</span>
-          <textarea placeholder="Tu mensaje *" required></textarea>
-        </div>
-
-        <button type="submit" class="btn-send">✈ Enviar mensaje</button>
-      </form>
+          <button type="submit" class="btn-send">✈ Enviar mensaje</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ MAPA + FAQ ============ -->
-<section class="bottom-grid container">
-
-  <!-- Mapa -->
-  <div class="map-card">
-    <div class="map-img">
-      <img src="images/Camaleon-plant.png" alt="Ubicación">
-      <span class="map-pin">📍</span>
+<!-- MODIFICADO: Se quitó la clase container de la section y se agregó un div interno -->
+<section class="bottom-grid">
+  <div class="container bottom-grid-content">
+    
+    <!-- Mapa -->
+    <div class="map-card">
+      <div class="map-img">
+        <img src="images/Camaleon-plant.png" alt="Ubicación">
+        <span class="map-pin">📍</span>
+      </div>
+      <a href="#" class="btn-map">📍 Ver en Google Maps →</a>
     </div>
-    <a href="#" class="btn-map">📍 Ver en Google Maps →</a>
+
+    <!-- FAQ -->
+    <div class="faq-card">
+      <span class="form-subtitle">PREGUNTAS FRECUENTES</span>
+      <h2>¿Tienes alguna <b>duda?</b></h2>
+      <p class="faq-note">Aquí respondemos las preguntas más comunes. Si no encuentras tu duda, no dudes en escribirnos.</p>
+
+      <details class="faq-item">
+        <summary>¿Cuánto tiempo duran los cursos? <span>+</span></summary>
+        <p>Cada curso tiene una duración distinta, la mayoría entre 4 y 8 semanas con contenido práctico.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿El contenido es permanente? <span>+</span></summary>
+        <p>Sí, una vez que te inscribes tienes acceso de por vida al contenido del curso.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo acceder desde mi celular? <span>+</span></summary>
+        <p>Por supuesto. La plataforma está optimizada para verse bien en móvil, tablet y escritorio.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Ofrecen certificados? <span>+</span></summary>
+        <p>Sí, al finalizar cada curso recibirás un certificado digital de Camaleón.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cómo puedo pagar? <span>+</span></summary>
+        <p>Aceptamos tarjetas de crédito/débito, transferencias y pagos por PayPal.</p>
+      </details>
+    </div>
+
   </div>
-
-  <!-- FAQ -->
-  <div class="faq-card">
-    <span class="form-subtitle">PREGUNTAS FRECUENTES</span>
-    <h2>¿Tienes alguna <b>duda?</b></h2>
-    <p class="faq-note">Aquí respondemos las preguntas más comunes. Si no encuentras tu duda, no dudes en escribirnos.</p>
-
-    <details class="faq-item">
-      <summary>¿Cuánto tiempo duran los cursos? <span>+</span></summary>
-      <p>Cada curso tiene una duración distinta, la mayoría entre 4 y 8 semanas con contenido práctico.</p>
-    </details>
-    <details class="faq-item">
-      <summary>¿El contenido es permanente? <span>+</span></summary>
-      <p>Sí, una vez que te inscribes tienes acceso de por vida al contenido del curso.</p>
-    </details>
-    <details class="faq-item">
-      <summary>¿Puedo acceder desde mi celular? <span>+</span></summary>
-      <p>Por supuesto. La plataforma está optimizada para verse bien en móvil, tablet y escritorio.</p>
-    </details>
-    <details class="faq-item">
-      <summary>¿Ofrecen certificados? <span>+</span></summary>
-      <p>Sí, al finalizar cada curso recibirás un certificado digital de Camaleón.</p>
-    </details>
-    <details class="faq-item">
-      <summary>¿Cómo puedo pagar? <span>+</span></summary>
-      <p>Aceptamos tarjetas de crédito/débito, transferencias y pagos por PayPal.</p>
-    </details>
-  </div>
-
 </section>
 
 <!-- ============ NEWSLETTER ============ -->
-<section class="newsletter container">
-  <div class="newsletter-inner">
-    <div class="newsletter-icon">✉</div>
-    <div class="newsletter-text">
-      <h3>Recibí contenido creativo en tu correo</h3>
-      <p>Tips, recursos y novedades sobre teoría del color y diseño.</p>
+<!-- MODIFICADO: Se quitó la clase container de la section y se agregó un div interno -->
+<section class="newsletter">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div class="newsletter-icon">✉</div>
+      <div class="newsletter-text">
+        <h3>Recibí contenido creativo en tu correo</h3>
+        <p>Tips, recursos y novedades sobre teoría del color y diseño.</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <button type="submit">Suscribirme</button>
+      </form>
     </div>
-    <form class="newsletter-form">
-      <input type="email" placeholder="Tu correo electrónico" required>
-      <button type="submit">Suscribirme</button>
-    </form>
   </div>
 </section>
 
@@ -197,14 +206,14 @@
     <div class="footer-brand">
       <a href="home.html" class="logo">
         <img src="images/camaleon logo-tmp.png" alt="Camaleon" class="logo-img">
-        <span class="logo-text">amaleon</span>
+        <!-- Texto "amaleon" eliminado -->
       </a>
       <p>Teoría del color para <br>mentes creativas.</p>
     </div>
     <div class="footer-col">
       <h4>NAVEGACIÓN</h4>
       <a href="home.html">Inicio</a>
-      <a href="#">Sobre mi</a>
+      <a href="sobre.html">Sobre mi</a>
       <a href="cursos.html">Cursos</a>
       <a href="#">Recursos</a>
       <a href="blog.html">Blog</a>
