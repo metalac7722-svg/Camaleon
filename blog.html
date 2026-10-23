@@ -13,14 +13,14 @@
   <div class="container header-content">
     <a href="home.html" class="logo">
       <img src="images/camaleon logo-tmp.png" alt="Camaleon" class="logo-img">
-      <span class="logo-text">amaleon</span>
+      <!-- Texto "amaleon" eliminado -->
     </a>
     <nav class="nav-menu">
       <a href="home.html">Inicio</a>
-      <a href="#">Sobre nosotros</a>
+      <a href="sobre.html">Sobre nosotros</a>
       <a href="cursos.html">Cursos</a>
       <a href="blog.html" class="active">Blog</a>
-      <a href="#">Contacto</a>
+      <a href="contacto.html">Contacto</a>
     </nav>
     <a href="home.html#log-in" class="btn-login">Iniciar sesión</a>
   </div>
@@ -45,123 +45,129 @@
   </div>
 </section>
 
-<section class="main container">
-  <div class="articles-area">
-    <span class="section-subtitle">ÚLTIMOS ARTÍCULOS</span>
-    <h2 class="section-title">Explora nuestro <b>blog.</b></h2>
+<!-- MODIFICADO: Se quitó la clase container de la section y se agregó un div interno -->
+<section class="main">
+  <div class="container main-content">
+    <div class="articles-area">
+      <span class="section-subtitle">ÚLTIMOS ARTÍCULOS</span>
+      <h2 class="section-title">Explora nuestro <b>blog.</b></h2>
 
-    <div class="grid-articles">
+      <div class="grid-articles">
 
-      <article class="card">
-        <div class="card-img">
-          <img src="images/Color-palette.png" alt="">
-          <span class="tag tag-green">Teoría del color</span>
-        </div>
-        <div class="card-body">
-          <h3>La psicología del color en el diseño</h3>
-          <p>Descubre cómo los colores influyen en las emociones y percepciones de tus usuarios.</p>
-          <div class="card-meta"><span>📅 10 Abr 2026</span><span>⏱ 5 min lectura →</span></div>
-        </div>
-      </article>
+        <article class="card">
+          <div class="card-img">
+            <img src="images/Color-palette.png" alt="">
+            <span class="tag tag-green">Teoría del color</span>
+          </div>
+          <div class="card-body">
+            <h3>La psicología del color en el diseño</h3>
+            <p>Descubre cómo los colores influyen en las emociones y percepciones de tus usuarios.</p>
+            <div class="card-meta"><span>📅 10 Abr 2026</span><span>⏱ 5 min lectura →</span></div>
+          </div>
+        </article>
 
-      <article class="card">
-        <div class="card-img">
-          <img src="images/armonia del color.png" alt="">
-          <span class="tag tag-blue">Tips</span>
-        </div>
-        <div class="card-body">
-          <h3>5 tips para elegir la paleta de colores perfecta</h3>
-          <p>Aprende a combinar colores de manera armónica y efectiva para tus proyectos.</p>
-          <div class="card-meta"><span>📅 6 Abr 2026</span><span>⏱ 3 min lectura →</span></div>
-        </div>
-      </article>
+        <article class="card">
+          <div class="card-img">
+            <img src="images/armonia del color.png" alt="">
+            <span class="tag tag-blue">Tips</span>
+          </div>
+          <div class="card-body">
+            <h3>5 tips para elegir la paleta de colores perfecta</h3>
+            <p>Aprende a combinar colores de manera armónica y efectiva para tus proyectos.</p>
+            <div class="card-meta"><span>📅 6 Abr 2026</span><span>⏱ 3 min lectura →</span></div>
+          </div>
+        </article>
 
-      <article class="card">
-        <div class="card-img">
-          <img src="images/aplicacion del color.png" alt="">
-          <span class="tag tag-orange">Inspiración</span>
-        </div>
-        <div class="card-body">
-          <h3>Colores que transmiten emociones</h3>
-          <p>Conoce qué emociones despierta cada color y cómo usarlos a tu favor.</p>
-          <div class="card-meta"><span>📅 2 Abr 2026</span><span>⏱ 4 min lectura →</span></div>
-        </div>
-      </article>
+        <article class="card">
+          <div class="card-img">
+            <img src="images/aplicacion del color.png" alt="">
+            <span class="tag tag-orange">Inspiración</span>
+          </div>
+          <div class="card-body">
+            <h3>Colores que transmiten emociones</h3>
+            <p>Conoce qué emociones despierta cada color y cómo usarlos a tu favor.</p>
+            <div class="card-meta"><span>📅 2 Abr 2026</span><span>⏱ 4 min lectura →</span></div>
+          </div>
+        </article>
 
-      <article class="card">
-        <div class="card-img">
-          <img src="images/Camaleon-palette.png" alt="">
-          <span class="tag tag-red">Tendencias</span>
-        </div>
-        <div class="card-body">
-          <h3>Tendencias de color para el 2026</h3>
-          <p>Estas son las paletas de colores que dominarán el mundo del diseño este año.</p>
-          <div class="card-meta"><span>📅 28 Mar 2026</span><span>⏱ 6 min lectura →</span></div>
-        </div>
-      </article>
+        <article class="card">
+          <div class="card-img">
+            <img src="images/Camaleon-palette.png" alt="">
+            <span class="tag tag-red">Tendencias</span>
+          </div>
+          <div class="card-body">
+            <h3>Tendencias de color para el 2026</h3>
+            <p>Estas son las paletas de colores que dominarán el mundo del diseño este año.</p>
+            <div class="card-meta"><span>📅 28 Mar 2026</span><span>⏱ 6 min lectura →</span></div>
+          </div>
+        </article>
 
-      <article class="card">
-        <div class="card-img">
-          <img src="images/arrow.png" alt="">
-          <span class="tag tag-purple">Herramientas</span>
-        </div>
-        <div class="card-body">
-          <h3>Herramientas digitales para diseñar con color</h3>
-          <p>Descubre las mejores herramientas digitales para trabajar con color de forma profesional.</p>
-          <div class="card-meta"><span>📅 22 Mar 2026</span><span>⏱ 3 min lectura →</span></div>
-        </div>
-      </article>
+        <article class="card">
+          <div class="card-img">
+            <img src="images/arrow.png" alt="">
+            <span class="tag tag-purple">Herramientas</span>
+          </div>
+          <div class="card-body">
+            <h3>Herramientas digitales para diseñar con color</h3>
+            <p>Descubre las mejores herramientas digitales para trabajar con color de forma profesional.</p>
+            <div class="card-meta"><span>📅 22 Mar 2026</span><span>⏱ 3 min lectura →</span></div>
+          </div>
+        </article>
 
-      <article class="card">
-        <div class="card-img">
-          <img src="images/Camaleon-plant.png" alt="">
-          <span class="tag tag-teal">Consejos</span>
-        </div>
-        <div class="card-body">
-          <h3>Cómo crear un moodboard con colores</h3>
-          <p>Descubre el paso a paso para crear un moodboard que te inspire al diseñar.</p>
-          <div class="card-meta"><span>📅 18 Mar 2026</span><span>⏱ 4 min lectura →</span></div>
-        </div>
-      </article>
+        <article class="card">
+          <div class="card-img">
+            <img src="images/Camaleon-plant.png" alt="">
+            <span class="tag tag-teal">Consejos</span>
+          </div>
+          <div class="card-body">
+            <h3>Cómo crear un moodboard con colores</h3>
+            <p>Descubre el paso a paso para crear un moodboard que te inspire al diseñar.</p>
+            <div class="card-meta"><span>📅 18 Mar 2026</span><span>⏱ 4 min lectura →</span></div>
+          </div>
+        </article>
 
+      </div>
     </div>
+
+    <aside class="sidebar">
+      <div class="widget">
+        <h3 class="widget-title">Categorías</h3>
+        <ul class="category-list">
+          <li><span class="icon-cat cat-green">🎨</span> Teoría del color <span class="count">12</span></li>
+          <li><span class="icon-cat cat-blue">🖌️</span> Diseño <span class="count">10</span></li>
+          <li><span class="icon-cat cat-orange">💡</span> Consejos <span class="count">8</span></li>
+          <li><span class="icon-cat cat-teal">📈</span> Tendencias <span class="count">6</span></li>
+          <li><span class="icon-cat cat-red">📚</span> Recursos <span class="count">5</span></li>
+          <li><span class="icon-cat cat-yellow">✨</span> Inspiración <span class="count">3</span></li>
+        </ul>
+      </div>
+      <div class="widget">
+        <h3 class="widget-title">Artículos populares</h3>
+        <ul class="popular-list">
+          <li><img src="images/Color-palette.png" alt=""><div><h4>Los colores que no conocías</h4><span>5 min lectura</span></div></li>
+          <li><img src="images/armonia del color.png" alt=""><div><h4>Combina colores como un experto</h4><span>4 min lectura</span></div></li>
+          <li><img src="images/aplicacion del color.png" alt=""><div><h4>Cómo el color influye en tus emociones</h4><span>6 min lectura</span></div></li>
+          <li><img src="images/Camaleon-palette.png" alt=""><div><h4>Errores al elegir una paleta de colores</h4><span>3 min lectura</span></div></li>
+        </ul>
+      </div>
+    </aside>
   </div>
-
-  <aside class="sidebar">
-    <div class="widget">
-      <h3 class="widget-title">Categorías</h3>
-      <ul class="category-list">
-        <li><span class="icon-cat cat-green">🎨</span> Teoría del color <span class="count">12</span></li>
-        <li><span class="icon-cat cat-blue">🖌️</span> Diseño <span class="count">10</span></li>
-        <li><span class="icon-cat cat-orange">💡</span> Consejos <span class="count">8</span></li>
-        <li><span class="icon-cat cat-teal">📈</span> Tendencias <span class="count">6</span></li>
-        <li><span class="icon-cat cat-red">📚</span> Recursos <span class="count">5</span></li>
-        <li><span class="icon-cat cat-yellow">✨</span> Inspiración <span class="count">3</span></li>
-      </ul>
-    </div>
-    <div class="widget">
-      <h3 class="widget-title">Artículos populares</h3>
-      <ul class="popular-list">
-        <li><img src="images/Color-palette.png" alt=""><div><h4>Los colores que no conocías</h4><span>5 min lectura</span></div></li>
-        <li><img src="images/armonia del color.png" alt=""><div><h4>Combina colores como un experto</h4><span>4 min lectura</span></div></li>
-        <li><img src="images/aplicacion del color.png" alt=""><div><h4>Cómo el color influye en tus emociones</h4><span>6 min lectura</span></div></li>
-        <li><img src="images/Camaleon-palette.png" alt=""><div><h4>Errores al elegir una paleta de colores</h4><span>3 min lectura</span></div></li>
-      </ul>
-    </div>
-  </aside>
 </section>
 
-<section class="newsletter container">
-  <div class="newsletter-inner">
-    <div class="newsletter-icon">✉</div>
-    <div class="newsletter-text">
-      <h3>Recibí contenido creativo en tu correo</h3>
-      <p>Tips, recursos y novedades sobre teoría del color y diseño.</p>
+<!-- MODIFICADO: Se quitó la clase container de la section para que el fondo cubra todo -->
+<section class="newsletter">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div class="newsletter-icon">✉</div>
+      <div class="newsletter-text">
+        <h3>Recibí contenido creativo en tu correo</h3>
+        <p>Tips, recursos y novedades sobre teoría del color y diseño.</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <button type="submit">Suscribirme</button>
+      </form>
     </div>
-    <form class="newsletter-form">
-      <input type="email" placeholder="Tu correo electrónico" required>
-      <button type="submit">Suscribirme</button>
-    </form>
   </div>
 </section>
 
@@ -170,18 +176,18 @@
     <div class="footer-brand">
       <a href="home.html" class="logo">
         <img src="images/camaleon logo-tmp.png" alt="Camaleon" class="logo-img">
-        <span class="logo-text">amaleon</span>
+        <!-- Texto "amaleon" eliminado -->
       </a>
       <p>Teoría del color para <br>mentes creativas.</p>
     </div>
     <div class="footer-col">
       <h4>NAVEGACIÓN</h4>
       <a href="home.html">Inicio</a>
-      <a href="#">Sobre mi</a>
+      <a href="sobre.html">Sobre mi</a>
       <a href="cursos.html">Cursos</a>
       <a href="#">Recursos</a>
       <a href="blog.html">Blog</a>
-      <a href="#">Contacto</a>
+      <a href="contacto.html">Contacto</a>
     </div>
     <div class="footer-col">
       <h4>RECURSOS</h4>
