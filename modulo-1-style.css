@@ -197,6 +197,7 @@ hr {
 .container3 ul li {
     display: flex;
     flex-direction: row;
+    transition: 0.2s ease-in-out;
 }
 
 .container3 ul li:hover {

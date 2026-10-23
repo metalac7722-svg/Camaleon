@@ -121,23 +121,27 @@ nav ul li a:hover{
     gap: 10px;
 }
 
-.grid-container button {
+.grid-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
     color: #f5f5f5;
     border-radius: 20px;
     background: #00593F;
-	border: none;
 	padding: 10px;
-	cursor: pointer;
-	outline: inherit;
+        transition: 0.5s ease;
 }
 
-.grid-container button:hover {
-    transition: 0.5s ease;
+.grid-container a:hover {
     background: none;
     color: #00593F;
     border: 1px solid #00593F;
 }
-
+.grid-container a b {
+    color: white;
+    text-decoration: none;
+}
 .container1 {
     margin-right: 20px;
     width: 70%;
@@ -169,9 +173,12 @@ hr {
 	padding:20px;
 	cursor: pointer;
 	outline: inherit;
+    transition: 0.3s ease-in-out;
 }
 
 .container1 button:hover {
+    text-shadow: #010101 0 0 10px;
+    width: 100%;
     background-image: url(/images/raindbow.gif);
 }
 
@@ -214,9 +221,9 @@ hr {
 
 .container2 .comments {
     overflow: scroll;
-    height: 100vh;
+    height: 80vh;
     width: 95%;
-    border: 1px #00593F solid;
+    border: 1px #d5cfcf solid;
     border-radius: 20px;
     margin:  20px auto;
 }
