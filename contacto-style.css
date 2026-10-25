@@ -13,7 +13,6 @@
 }
 
 body {
-    /* Fondo animado que asoma por los bordes */
     background: linear-gradient(134deg, #342ab9, #f52121, #48cc33);
     background-size: 600% 600%;
     -webkit-animation: gradient 7s ease infinite;
@@ -22,11 +21,7 @@ body {
     
     color: #1b1b1b;
     line-height: 1.6;
-
-    /* Margen para el marco de colores */
     padding: 12px;
-
-    /* Para que el footer se pegue al fondo */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -48,8 +43,6 @@ body {
     100% { background-position: 4% 0% }
 }
 
-/* ESTO RELLENA LOS HUECOS: 
-   Hace que el fondo crema ocupe todo el ancho de la pantalla */
 body > *:not(script) {
     background-color: #FCF5EF;
     width: 100%;
@@ -65,7 +58,6 @@ img {
     display: block;
 }
 
-/* Contenedor interno para centrar el contenido */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -99,15 +91,9 @@ img {
     gap: 8px;
 }
 
-/* Logo más grande sin el texto */
 .logo-img {
     height: 55px;
     width: auto;
-}
-
-/* Por si acaso queda el texto en el HTML */
-.logo-text {
-    display: none !important;
 }
 
 .nav-menu {
@@ -154,7 +140,7 @@ img {
 }
 
 /* ============================
-   ESTILOS GENERALES (TEXTOS)
+   TEXTOS GENERALES
    ============================ */
 .subtitle, .form-subtitle {
     display: inline-block;
@@ -193,28 +179,17 @@ p {
     background-color: #FCF5EF;
 }
 
-.blob {
+.blob-orange {
     position: absolute;
+    width: 320px;
+    height: 320px;
+    background: #E06A2A;
+    top: -80px;
+    right: 10%;
     border-radius: 50%;
     filter: blur(70px);
-    opacity: 0.25;
+    opacity: 0.35;
     z-index: 0;
-}
-
-.blob-orange {
-    width: 350px;
-    height: 350px;
-    background: #E06A2A;
-    top: -50px;
-    right: 10%;
-}
-
-.blob-green {
-    width: 300px;
-    height: 300px;
-    background: #49BC9A;
-    bottom: -50px;
-    left: -50px;
 }
 
 .hero-content {
@@ -277,18 +252,20 @@ p {
     flex: 1 1 350px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+/* --- MAGIA PARA QUITAR EL CUADRO DE LA IMAGEN --- */
 .hero-image img {
-    max-width: 400px;
+    max-width: 380px;
     width: 100%;
+    mix-blend-mode: multiply; /* Hace que el fondo claro se vuelva transparente */
     filter: drop-shadow(0 15px 25px rgba(0, 89, 63, 0.15));
 }
 
 /* ============================
-   SECCIÓN PRINCIPAL (INFO + FORMULARIO)
+   SECCIÓN INFO + FORMULARIO
    ============================ */
-/* Corregido: Ocupa todo el ancho con el fondo, y centra su contenido */
 .main {
     padding: 60px 0;
     background-color: #FCF5EF;
@@ -301,7 +278,6 @@ p {
     align-items: flex-start;
 }
 
-/* Columna izquierda: Tarjetas de información */
 .info-col {
     flex: 1 1 40%;
     display: flex;
@@ -345,7 +321,6 @@ p {
     margin-bottom: 0;
 }
 
-/* Columna derecha: Formulario */
 .form-col {
     flex: 1 1 60%;
 }
@@ -451,7 +426,6 @@ p {
 /* ============================
    MAPA + FAQ
    ============================ */
-/* Corregido: Ocupa todo el ancho con el fondo, y centra su contenido */
 .bottom-grid {
     padding: 0 0 70px 0;
     background-color: #FCF5EF;
@@ -464,7 +438,6 @@ p {
     gap: 40px;
 }
 
-/* Tarjeta del Mapa */
 .map-card {
     background: #fff;
     padding: 25px;
@@ -488,7 +461,7 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.6; /* Simula un mapa descolorido */
+    opacity: 0.6;
 }
 
 .map-pin {
@@ -518,7 +491,6 @@ p {
     border-color: #00593F;
 }
 
-/* Tarjeta de FAQ */
 .faq-card {
     background: #fff;
     padding: 35px;
