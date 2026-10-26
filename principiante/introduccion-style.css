@@ -35,13 +35,13 @@ body {
     100%{background-position:4% 0%}
 }
 main {
+    height: 100%;
     padding: 20px 20px 0 20px;
     position: relative;
     margin: 10px;
-    background-color: #fdf6f0f5;
+    background-color: #fdf6f0;
     border-radius: 20px;
     border: #adab96 solid 2px 2px 0 2px;
-    height: 100%;
 }
 
 nav ul {
@@ -68,7 +68,7 @@ nav ul li a{
     padding: 12px 30px;
     margin: 0 10px 0 10px;
     border-radius: 2px 20px 2px 20px;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 nav ul li a:hover{
@@ -103,41 +103,184 @@ nav ul li a:hover{
 }
 
 .container-wrapper {
+    width: 95%;
+    margin: auto;
     display: flex;
     flex-direction: row;
 }
 
-.container1 {
-    width: 70%;
+.grid-container {
+    background-color: #d9d2ccf5;
+    padding: 20px;
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: #a1a1a1 solid 1px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    gap: 10px;
 }
 
+.grid-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    color: #f5f5f5;
+    border-radius: 20px;
+    background: #00593F;
+	padding: 10px;
+        transition: 0.5s ease;
+}
 
-nav.info ul {
-    position: relative;
-    top: 0;
-    list-style: none;
-    overflow: hidden;
+.grid-container a:hover {
+    background: none;
+    color: #00593F;
+    border: 1px solid #00593F;
+}
+.grid-container a b {
+    color: white;
+    text-decoration: none;
+}
+.container1 {
+    margin-right: 20px;
+    width: 70%;
+    height: 100%;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.container1 video {
+    box-shadow: #b7b7b7 0 0 20px 10px;
+    border-radius: 20px;
+}
+
+.container1 button {
+    font-weight: bolder;
+    font-size: x-large;
+    justify-content: center;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    color: #f5f5f5;
+    border-radius: 20px;
+    background: #00593F;
+	border: none;
+	padding:20px;
+	cursor: pointer;
+	outline: inherit;
+    transition: 0.3s ease-in-out;
+}
+
+.container1 button:hover {
+    text-shadow: #010101 0 0 10px;
+    width: 100%;
+    background-image: url(/images/raindbow.gif);
+}
+
+.container1 button img {
+    height: 30px;
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 50%;
+    float: left;
+    height: 20px;
+}
+
+.container2 {
+    width: 30%;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+}
+
+#comment {
+    background-color: #fdf6f0;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #00593F;
+    padding: 10px;
+}
+
+#submit {
+    border-radius: 0 10px 10px 0;
+    padding: 5px 10px;
+    background: #2C9576;
+    color: #f5f5f5;
+    border: 1px solid #666666;
+}
+
+.container2 .comments {
+    overflow: scroll;
+    height: 80vh;
+    width: 95%;
+    border: 1px #d5cfcf solid;
+    border-radius: 20px;
+    margin:  20px auto;
+}
+
+.container2 .comments div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 10vh;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: #ece2d9f5;
+}
+
+.container2 .comments div span {
     padding: 20px;
 }
 
-.info ul a {
-    display: block;
-    width: 40%;
+.container2 .comments div img {
+    height: 99%;
+    border-radius: 0 0 0 20px;
 }
 
-nav.info ul li{
+footer .container5 {
+    width: 100%;
+    justify-self: center;
+    padding: 20px 20px;
+    background-color: #FCF5EF;
+    border-radius: 20px 20px 0 0;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
-    float: right;
 }
 
-nav.info ul li a{
-    text-decoration: none;
+footer .container5 img {
+    height: 20vh;
+}
+
+footer .container5 .txt-bx4 ul {
+    list-style: none;
+}
+
+footer .container5 .txt-bx4 h2 {
+    color: #2C9576;
+}
+
+footer .container5 .txt-bx4 a {
     color: #1b1b1b;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 12px 30px;
-    margin: 0 10px 0 10px;
-    border-radius: 2px 20px 2px 20px;
-    transition: 0.5s ease-in-out;
+}
+
+footer p.copyright {
+    background: #00593F;
+    color: #f5f5f5;
+    padding: 40px 20px;
+    width: 100%;
+    justify-self: center;
+    border-radius: 0 0 20px 20px;
+    border: #1b1b1b solid 2px;
 }
