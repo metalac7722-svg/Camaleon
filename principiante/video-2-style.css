@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(134deg, #342ab9, #f52121, #48cc33);
+    background-size: 600% 600%;
+    -webkit-animation: gradient 7s ease infinite;
+    -moz-animation: gradient 7s ease infinite;
+    animation: gradient 7s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@keyframes gradient {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+
+main {
+    padding: 20px 20px 0 20px;
+    position: relative;
+    margin: 10px;
+    background-color: #fdf6f0f5;
+    border-radius: 20px;
+    border: #adab96 solid 2px;
+    height: 100%;
+}
+
+nav ul {
+    position: relative;
+    top: 0;
+    list-style: none;
+    overflow: hidden;
+    padding: 20px;
+}
+
+nav ul img{
+    width: 10%;
+}
+
+nav ul li{
+    float: right;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #1b1b1b;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 30px;
+    margin: 0 10px 0 10px;
+    border-radius: 2px 20px 2px 20px;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover{
+    background: linear-gradient(130deg, rgba(87, 199, 133, 1) 50%, rgb(109, 237, 83) 100%);
+    color: #f6f6f6;
+    box-shadow: 0 3px 5px 0 rgba(93, 93, 93, 0.6);
+    transform: translateY(10px);
+    border-radius: 20px 2px 20px 2px;
+}
+
+#active {
+    color: #00593F;
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: #b7e1bda6;
+}
+
+#active:hover {
+    background: linear-gradient(130deg, rgba(87, 199, 133, 1) 50%, rgb(109, 237, 83) 100%);
+    color: #f6f6f6;
+    box-shadow: 0 3px 5px 0 rgba(93, 93, 93, 0.6);
+    transform: translateY(10px);
+    border-radius: 20px 2px 20px 2px;
+    border: none;
+}
+
+#log-in {
+    background-color: #00593F;
+    padding:  12px 30px;
+    color: #fff;
+    border-radius: 30px 30px;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    padding-bottom: 30px; 
+}
+
+.container1 {
+    width: 70%;
+}
+
+nav.info ul {
+    position: relative;
+    top: 0;
+    list-style: none;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.info ul a {
+    display: block;
+    width: 40%;
+}
+
+nav.info ul li{
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+nav.info ul li a{
+    text-decoration: none;
+    color: #1b1b1b;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 30px;
+    margin: 0 10px 0 10px;
+    border-radius: 2px 20px 2px 20px;
+    transition: 0.5s ease-in-out;
+}
+
+/* =========================================
+   ESTILOS DEL REPRODUCTOR Y NOTAS
+   ========================================= */
+
+.container1 video {
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+    background-color: #000; 
+    aspect-ratio: 16 / 9; 
+    object-fit: cover;
+}
+
+.video-info {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.video-info h2 {
+    color: #1b1b1b;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.video-info p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.container2 {
+    width: 30%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: fit-content;
+}
+
+.container2 h3 {
+    color: #1b1b1b;
+    font-size: 1.2rem;
+}
+
+.container2 input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.container2 input:focus {
+    border-color: #48cc33; 
+    box-shadow: 0 0 5px rgba(72, 204, 51, 0.3);
+}
+
+/* =========================================
+   ESTILO PARA EL BOTÓN SIGUIENTE NIVEL
+   ========================================= */
+
+.next-level-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-end; /* Alinea a la derecha */
+}
+
+.next-btn {
+    background-color: #00593F; 
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.next-btn:hover {
+    background: linear-gradient(130deg, rgba(87, 199, 133, 1) 50%, rgb(109, 237, 83) 100%);
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(93, 93, 93, 0.5);
+    color: #1b1b1b;
+}
+
+.next-btn:active {
+    transform: translateY(0);
+}
