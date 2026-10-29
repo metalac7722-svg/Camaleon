@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nombre del CSS específico para este video -->
+    <link rel="stylesheet" href="video-2-style.css">
+    <title>Conceptos básicos de la teoría del color</title>
+</head>
+<body>
+    <main>
+        <nav class="menu">
+            <ul>
+                <!-- Ruta del logo corregida -->
+                <a href="www.youtube.com"><img src="../images/camaleon logo-tmp.png" alt="Logo Camaleón"></a>
+                <li><a href="" id="log-in">Iniciar Sesion</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="cursos.html" id="active">Cursos</a></li>
+                <li><a href="home.html">Inicio</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-wrapper">
+            <!-- Columna Izquierda: Video e Info -->
+            <div class="container container1">
+                <!-- Ruta del video 2 corregida -->
+                <video src="../images/video numero 2.mp4" controls width="100%"></video>
+                
+                <div class="video-info">
+                    <h2>Conceptos básicos de la teoría del color</h2>
+                    <p>Descubre los fundamentos del color, sus características y cómo se relacionan entre sí. Aprenderás los conceptos esenciales que sientan las bases para todo lo que veremos en los siguientes módulos.</p>
+                </div>
+
+                <!-- BOTÓN SIGUIENTE NIVEL -->
+                <div class="next-level-container">
+                    <audio id="hoot" src="../sounds/Hoot.mp3"></audio>
+                    <!-- Si tienes un link de Kahoot para este video, agrégalo aquí dentro del window.open -->
+                    <button class="next-btn" onclick="document.getElementById('hoot').play();">
+                        Siguiente Nivel
+                    </button>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Barra lateral / Comentarios -->
+            <div class="container container2">
+                <h3>Notas de la clase</h3>
+                <input type="text" placeholder="Escribe una nota aquí...">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
