@@ -194,6 +194,28 @@ hr {
     width: 90%;
 }
 
+.container3 h2 {
+    padding: 20px;
+	position: relative;
+	background: #ffd780;
+	border-radius: .4em;
+}
+
+.container3 h2:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #ffd780;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
 .container3 ul li {
     display: flex;
     flex-direction: row;
@@ -201,7 +223,7 @@ hr {
 }
 
 .container3 ul li:hover {
-    background-color: #babab6;
+    background-color: #d2e9db;
     border-radius: 20px;
 }
 
@@ -230,6 +252,10 @@ hr {
 
 .container3 ul li .txt-bx1 {
     font-size: 20px;
+}
+
+.container3 ul li .txt-bx1 p {
+    max-width: 80%;
 }
 
 .container3 .char {

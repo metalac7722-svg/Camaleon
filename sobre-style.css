@@ -60,10 +60,6 @@ a {
     color: inherit;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
 
 .container {
     width: 90%;
@@ -74,79 +70,74 @@ img {
 /* ============================
    HEADER
    ============================ */
-.header {
-    background-color: #FCF5EF;
-    padding: 15px 0;
-    border-bottom: 2px solid #adab96;
-    position: sticky;
+    nav {
+        background-color: #fbe0cc;
+        border-radius: 20px 20px 0 0;
+        padding: 20px;
+    }
+ul a {
+    text-decoration: none;
+    align-self: center;
+    margin: auto 0;
+    color: #2C9576;
+}
+
+nav ul {
+    position: relative;
     top: 0;
-    z-index: 100;
-    border-radius: 20px 20px 0 0;
+    list-style: none;
+    overflow: hidden;
+    padding: 20px;
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
+nav ul img{
+    width: 10%;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+nav ul li{
+    float: right;
 }
 
-/* Ajuste para que el logo se vea más grande ahora que no tiene texto */
-.logo-img {
-    height: 55px; 
-    width: auto;
-}
-
-/* Se elimina la clase .logo-text porque ya no existe en el HTML */
-
-.nav-menu {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.nav-menu a {
+nav ul li a{
+    text-decoration: none;
     color: #1b1b1b;
-    font-weight: 500;
-    padding: 10px 18px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 30px;
+    margin: 0 10px 0 10px;
     border-radius: 2px 20px 2px 20px;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
-.nav-menu a:hover {
+nav ul li a:hover{
     background: linear-gradient(130deg, rgba(87, 199, 133, 1) 50%, rgb(109, 237, 83) 100%);
     color: #f6f6f6;
     box-shadow: 0 3px 5px 0 rgba(93, 93, 93, 0.6);
-    transform: translateY(4px);
+    transform: translateY(10px);
     border-radius: 20px 2px 20px 2px;
 }
 
-.nav-menu a.active {
+#active {
     color: #00593F;
-    font-weight: 700;
-    background-color: #b7e1bda6;
+    font-weight: bolder;
     border-radius: 20px;
+    background-color: #b7e1bda6;
 }
 
-.btn-login {
+#active:hover {
+    background: linear-gradient(130deg, rgba(87, 199, 133, 1) 50%, rgb(109, 237, 83) 100%);
+    color: #f6f6f6;
+    box-shadow: 0 3px 5px 0 rgba(93, 93, 93, 0.6);
+    transform: translateY(10px);
+    border-radius: 20px 2px 20px 2px;
+    border: none;
+}
+
+#log-in {
     background-color: #00593F;
+    padding:  12px 30px;
     color: #fff;
-    padding: 12px 28px;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-
-.btn-login:hover {
-    background-color: #49BC9A;
-    transform: translateY(-2px);
+    border-radius: 30px 30px;
 }
 
 /* ============================
@@ -249,7 +240,7 @@ p {
 
 .about-img img {
     width: 100%;
-    max-width: 450px;
+    max-width: 350px;
     filter: drop-shadow(0 15px 25px rgba(0, 89, 63, 0.15));
 }
 

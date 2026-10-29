@@ -45,6 +45,7 @@ main {
 }
 
 nav ul {
+    background-color: #fdf6f0;
     position: relative;
     top: 0;
     list-style: none;
@@ -106,8 +107,33 @@ nav ul li a:hover{
     height: 100vh;
 }
 
+.blob-red {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    background: #e0302a;
+    top: 80px;
+    right: -300px;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.35;
+    z-index: 0;
+}
+
+.blob-orange {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    background: #f3d425;
+    top: 220px;
+    left: -300px;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.35;
+    z-index: 0;
+}
+
 .home-container {
-    background-image: url(images/color-splash-orange.png);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -208,6 +234,7 @@ nav ul li a:hover{
 
 #screen2 .container2 .window img {
     border-radius: 20px 20px 0 0;
+    clip-path: border-box;
     height: 50%;
     width: 100%;
 }
